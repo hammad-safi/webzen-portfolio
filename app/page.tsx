@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -75,6 +74,30 @@ export default function Home() {
     { id: "services", label: "Services" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
+  ];
+
+  const projects = [
+    {
+      title: "Amazon Affiliate Platform",
+      desc: "Amazon affiliate landing experience built for conversions.",
+      tags: ["NEXT.JS", "AFFILIATE", "UI"],
+      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAOPzcPkGdVMlr-igbUGwq3KsuzjpTDv3Z2km4DGQg9YfnVxzEaSlGooaDOE0plD9ciSq8Ogr8uIIOqwChOxtXlVRUONoklCQs_gtq9Lht9GEhtCkKh87jprd0_ihGHYdssYLoftHnsKrKG3-r0kJnRQJ_5lm17vWUkw2mOcM0T78ilC3YKt7nFOyOZ3Cyj5Uw4B5tjHkU1wjdSO6nHOWitb8rjn_95p8nCoH37gDmMyuPVdemJPiOS-R5gq0pVipASH6jLdgokpj0K",
+      demo: "https://selectrostream.vercel.app/",
+    },
+    {
+      title: "Restaurant Website",
+      desc: "A modern restaurant site with menu, booking, and branding.",
+      tags: ["NEXT.JS", "RESTAURANT", "RESPONSIVE"],
+      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBOSyNbIwNmbLOjvg1Dok15J0hLky1Q1L46ulQnR9vqfvDa8KHKiXeXDetf6JyMbkJ3Car2Ixh4rAGYqNNX3diO9HHmqy7Aw2jyZ2RyroRTnLtzyyCdlLD1Kmt4_EKKYEtoXrZEDxbK2sf_EWUYgjhHSgAGRMfddzldqlSeQv-dIQyGy1xP_30RVNb9N0s_pT_tQ7pniCNPa1u-QcJ0HAsraQQVAeWIepGvqBw3NYdGGGNOuYgy0tMRbIOdENraEAdmQCaPfRUBZ1gJ",
+      demo: "https://restorent-sigma.vercel.app/",
+    },
+    {
+      title: "Pharmacy ERP Software",
+      desc: "Pharmacy management software with inventory, billing, and reporting.",
+      tags: ["NEXT.JS", "ERP", "SOFTWARE"],
+      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAUe18XjBanSCkf--1HWl_XhOGsDVt3fWpT5klgj8PL_qBoimMKjz86-GuZPKsS98j0HtTZizBi5S-27Jq1XAlSXV6Zxxn1sq898RL0mXN_vP2PI0uaKtI53oCSdoQXI03_vzGKOlrOf19DK2sMpd2R12cbszzJxXJ7eMH_FV-CFHGrRyTPojQ-JjAGIN72LuoEHqcJERkUY8WEUAVGrhj1PS1OTH9l39GbJKohQu3qUPgcp7A9UijIv-NhiQkQaEyk8FEGpOdEUSH1",
+      demo: "https://pharmacyerp.vercel.app/",
+    },
   ];
 
   return (
@@ -197,9 +220,9 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
-            <ProjectCard title="ZenCart E-commerce" desc="High-performance headless commerce with global payments." tags={["NEXT.JS", "STRIPE"]} img="https://lh3.googleusercontent.com/aida-public/AB6AXuAOPzcPkGdVMlr-igbUGwq3KsuzjpTDv3Z2km4DGQg9YfnVxzEaSlGooaDOE0plD9ciSq8Ogr8uIIOqwChOxtXlVRUONoklCQs_gtq9Lht9GEhtCkKh87jprd0_ihGHYdssYLoftHnsKrKG3-r0kJnRQJ_5lm17vWUkw2mOcM0T78ilC3YKt7nFOyOZ3Cyj5Uw4B5tjHkU1wjdSO6nHOWitb8rjn_95p8nCoH37gDmMyuPVdemJPiOS-R5gq0pVipASH6jLdgokpj0K" />
-            <ProjectCard title="RapidEats App" desc="Food delivery platform with live tracking." tags={["REACT NATIVE", "FIREBASE"]} img="https://lh3.googleusercontent.com/aida-public/AB6AXuBOSyNbIwNmbLOjvg1Dok15J0hLky1Q1L46ulQnR9vqfvDa8KHKiXeXDetf6JyMbkJ3Car2Ixh4rAGYqNNX3diO9HHmqy7Aw2jyZ2RyroRTnLtzyyCdlLD1Kmt4_EKKYEtoXrZEDxbK2sf_EWUYgjhHSgAGRMfddzldqlSeQv-dIQyGy1xP_30RVNb9N0s_pT_tQ7pniCNPa1u-QcJ0HAsraQQVAeWIepGvqBw3NYdGGGNOuYgy0tMRbIOdENraEAdmQCaPfRUBZ1gJ" />
-            <ProjectCard title="OmniManager ERP" desc="Enterprise-grade dashboard for supply chain." tags={["NODE.JS", "POSTGRES"]} img="https://lh3.googleusercontent.com/aida-public/AB6AXuAUe18XjBanSCkf--1HWl_XhOGsDVt3fWpT5klgj8PL_qBoimMKjz86-GuZPKsS98j0HtTZizBi5S-27Jq1XAlSXV6Zxxn1sq898RL0mXN_vP2PI0uaKtI53oCSdoQXI03_vzGKOlrOf19DK2sMpd2R12cbszzJxXJ7eMH_FV-CFHGrRyTPojQ-JjAGIN72LuoEHqcJERkUY8WEUAVGrhj1PS1OTH9l39GbJKohQu3qUPgcp7A9UijIv-NhiQkQaEyk8FEGpOdEUSH1" />
+            {projects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
           </div>
         </div>
       </section>
@@ -376,7 +399,7 @@ function ServiceCard({ icon, title, desc, color, colSpan = "" }: { icon: string;
   );
 }
 
-function ProjectCard({ title, desc, tags, img }: { title: string; desc: string; tags: string[]; img: string }) {
+function ProjectCard({ title, desc, tags, img, demo }: { title: string; desc: string; tags: string[]; img: string; demo: string }) {
   return (
     <div className="glass-card group rounded-2xl overflow-hidden flex flex-col h-full hover:shadow-2xl transition-all duration-500">
       <div className="h-64 overflow-hidden relative shrink-0">
@@ -384,14 +407,19 @@ function ProjectCard({ title, desc, tags, img }: { title: string; desc: string; 
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
       </div>
       <div className="p-stack-md flex flex-col flex-grow">
-        <div className="flex gap-2 mb-3">
-          {tags.map(t => <span key={t} className="px-2 py-0.5 rounded text-[9px] bg-primary/10 text-primary border border-primary/20 font-bold uppercase tracking-wider">{t}</span>)}
+        <div className="flex gap-2 mb-3 flex-wrap">
+          {tags.map((t) => (
+            <span key={t} className="px-2 py-0.5 rounded text-[9px] bg-primary/10 text-primary border border-primary/20 font-bold uppercase tracking-wider">
+              {t}
+            </span>
+          ))}
         </div>
         <h3 className="font-bold text-xl mb-2 group-hover:text-primary transition-colors">{title}</h3>
         <p className="text-on-surface-variant text-sm mb-stack-md flex-grow line-clamp-3">{desc}</p>
         <div className="flex gap-4">
-          <a className="text-primary text-sm font-bold flex items-center gap-1 hover:underline" href="#">Demo <span className="material-symbols-outlined text-sm">open_in_new</span></a>
-          <a className="text-on-surface-variant hover:text-white text-sm font-bold flex items-center gap-1 hover:underline" href="#">GitHub <span className="material-symbols-outlined text-sm">code</span></a>
+          <a className="text-primary text-sm font-bold flex items-center gap-1 hover:underline" href={demo} target="_blank" rel="noopener noreferrer">
+            Demo <span className="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
         </div>
       </div>
     </div>
