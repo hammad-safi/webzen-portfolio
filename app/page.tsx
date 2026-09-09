@@ -92,11 +92,18 @@ export default function Home() {
       demo: "https://restorent-sigma.vercel.app/",
     },
     {
-      title: "Pharmacy ERP Software",
-      desc: "Pharmacy management software with inventory, billing, and reporting.",
-      tags: ["NEXT.JS", "ERP", "SOFTWARE"],
+      title: "Business Management Software",
+      desc: "Offline-ready business management software for inventory, sales, purchases, and reporting.",
+      tags: ["REACT", "ELECTRON", "ERP"],
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAUe18XjBanSCkf--1HWl_XhOGsDVt3fWpT5klgj8PL_qBoimMKjz86-GuZPKsS98j0HtTZizBi5S-27Jq1XAlSXV6Zxxn1sq898RL0mXN_vP2PI0uaKtI53oCSdoQXI03_vzGKOlrOf19DK2sMpd2R12cbszzJxXJ7eMH_FV-CFHGrRyTPojQ-JjAGIN72LuoEHqcJERkUY8WEUAVGrhj1PS1OTH9l39GbJKohQu3qUPgcp7A9UijIv-NhiQkQaEyk8FEGpOdEUSH1",
-      demo: "https://pharmacyerp.vercel.app/",
+      demo: "https://restorentsoft-erp.vercel.app/",
+    },
+    {
+      title: "Dastarkhwan Restaurant ERP",
+      desc: "Offline restaurant operations software for orders, kitchen workflows, staff roles, and sales tracking.",
+      tags: ["REACT", "RESTAURANT", "ERP"],
+      img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+      demo: "https://restorentsoft-erp.vercel.app/",
     },
   ];
 
