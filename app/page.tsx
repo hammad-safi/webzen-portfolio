@@ -96,7 +96,7 @@ export default function Home() {
       desc: "Offline-ready business management software for inventory, sales, purchases, and reporting.",
       tags: ["REACT", "ELECTRON", "ERP"],
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAUe18XjBanSCkf--1HWl_XhOGsDVt3fWpT5klgj8PL_qBoimMKjz86-GuZPKsS98j0HtTZizBi5S-27Jq1XAlSXV6Zxxn1sq898RL0mXN_vP2PI0uaKtI53oCSdoQXI03_vzGKOlrOf19DK2sMpd2R12cbszzJxXJ7eMH_FV-CFHGrRyTPojQ-JjAGIN72LuoEHqcJERkUY8WEUAVGrhj1PS1OTH9l39GbJKohQu3qUPgcp7A9UijIv-NhiQkQaEyk8FEGpOdEUSH1",
-      demo: "https://restorentsoft-erp.vercel.app/",
+      demo: "https://genral-erp.vercel.app/",
     },
     {
       title: "Dastarkhwan Restaurant ERP",
